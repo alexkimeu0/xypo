@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xypo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Side Navigation-->
+    <nav id="sideNav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Courses</a>
+            </li>
+            <li>
+                <a href="#">Offer</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Menu Button-->
+    <span class="fas fa-align-right" id="menuBtn"></span>
+
+
+    <!--Header section-->
+    <section class="header">
+        <div class="container">
+            <img src="./images/logo.png" alt="" class="logo">
+
+            <div class="header-text">
+                <h1>Once we become predictable, we become vulnerable.</h1>
+                <span class="square"></span>
+                <p>
+                    The musicians play their instruments. I play the orchestra.
+                </p>
+
+                <button class="btn">Read More</button>
+
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About section-->
+
+    <section id="about">
+        <div class="about-left">
+            <img src="./images/about.png" alt="">
+        </div>
+
+        <div class="about-right">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus tempore est
+                    consequuntur architecto, alias illum nemo similique, sit, aliquam nulla inventore ipsam corrupti
+                    vitae! Quo unde libero illum totam.
+                    Enim laudantium magni, possimus delectus totam, beatae excepturi sunt maiores, aliquam eius quo!
+                    Maiores delectus maxime quidem eveniet earum soluta dolore quisquam laudantium nisi quo eos
+                    mollitia, qui nemo nesciunt!
+                    Ad, maxime. Officia, adipisci magni dolores sint maiores consectetur odit placeat dolor corrupti
+                    quam magnam porro assumenda ab voluptatum rem accusantium in harum ipsum, molestias qui quasi
+                    cumque. Reprehenderit, tempora.
+                </p>
+                <br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+
+                <h2>"If you quit, it was all for nothing. Sometimes success is just around the corner."</h2>
+                <h3>----Brad Traversy</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var menuBtn = document.getElementById('menuBtn');
+        var sideNav = document.getElementById('sideNav');
+
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+
+            if (sideNav.style.right === "-250px") {
+                sideNav.style.right = "0";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
